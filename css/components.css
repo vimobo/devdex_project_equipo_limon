@@ -1,0 +1,109 @@
+/* =========================
+   BUTTON
+========================= */
+
+.button {
+    display: inline-block;
+
+    padding: 12px 24px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: var(--color-primary);
+    color: var(--color-white);
+
+    cursor: pointer;
+
+    font-size: 1rem;
+
+    transition: 0.2s;
+}
+
+.button:hover {
+    opacity: 0.85;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    margin-top: 40px;
+}
+
+.card {
+    padding: 25px;
+
+    background-color: var(--color-light);
+
+    border-radius: 10px;
+
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form {
+    max-width: 600px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.form textarea {
+    resize: vertical;
+}
+
+.form input:focus,
+.form textarea:focus {
+    outline: 2px solid var(--color-primary);
+    border-color: transparent;
+}
+
+
+/* =========================
+   RESPONSIVE CARDS
+========================= */
+
+@media (max-width: 700px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
