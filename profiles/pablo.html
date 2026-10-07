@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi página web</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/components.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Mi Web</h1>
+
+            <nav class="nav">
+                <a href="#inicio">Inicio</a>
+                <a href="#sobre-mi">Sobre mí</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h2>Bienvenido a mi página</h2>
+                <p>
+                    Aqui encontraras mi perfil de GitHub y algunas cosas sobre mí.
+                </p>
+
+                <a href="#sobre-mi" class="button">
+                    Saber más
+                </a>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="section">
+            <div class="container">
+                <h2>Sobre mí</h2>
+
+                <div class="cards">
+
+                    <article class="card">
+                        <h3>Diseño</h3>
+                        <p>
+                            Me gusta diseñar diferentes páginas webs modernas y con responsive, sobretodo si estan relacionadas con coches.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Desarrollo</h3>
+                        <p>
+                            Desarrollo en un entorno de llamado VS Code donde me encargo de programar en HTML, CSS y JavaScript. Ademas conozco Java, PHP y Base de datos
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Proyectos</h3>
+                        <p>
+                            He hecho páginas webs en distintos ambitos y sitios, relacionadas con coches, videojuegos y otro tipo de empresas.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section">
+            <div class="container">
+                <h2>Contacto</h2>
+
+                <form class="form">
+
+                    <input
+                        type="text"
+                        placeholder="Nombre"
+                    >
+
+                    <input
+                        type="email"
+                        placeholder="Correo electrónico"
+                    >
+
+                    <textarea
+                        placeholder="Mensaje"
+                        rows="5"
+                    ></textarea>
+
+                    <button type="submit" class="button">
+                        Enviar
+                    </button>
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Mi Web</p>
+    </footer>
+
+</body>
+</html>
