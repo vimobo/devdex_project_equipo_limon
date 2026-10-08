@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f5f9;
+    color: #263244;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Cabecera */
+.header {
+    background: #172338;
+    color: white;
+    padding: 20px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    margin: 0;
+    font-size: 28px;
+}
+
+.nav {
+    display: flex;
+    gap: 24px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: #facc15;
+}
+
+/* Inicio */
+.hero {
+    padding: 80px 0;
+    background: #e5edff;
+    text-align: center;
+}
+
+.hero h2 {
+    margin: 0 0 15px;
+    color: #172338;
+    font-size: 40px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+/* Botones */
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #1d4ed8;
+}
+
+/* Secciones */
+.section {
+    padding: 55px 0;
+}
+
+.section h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+    color: #172338;
+}
+
+/* Tarjetas de Sobre mí */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.card {
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px #17233812;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #2563eb;
+}
+
+.card p {
+    margin-bottom: 0;
+}
+
+/* Contacto */
+#contacto {
+    background: #e5edff;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background: white;
+    color: #263244;
+    font: inherit;
+}
+
+.form textarea {
+    resize: vertical;
+}
+
+.form input:focus,
+.form textarea:focus {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+}
+
+.form .button {
+    align-self: flex-start;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #ca8a04;
+    outline-offset: 4px;
+}
+
+/* Pie de página */
+footer {
+    padding: 20px;
+    background: #172338;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 35px 0;
+    }
+}
